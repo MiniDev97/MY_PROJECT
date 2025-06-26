@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEURAL SPACE</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+
+
+<!--non scroll pagina-->
+<style>
+  /* Blocca lo scroll */
+  body.noscroll {
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // All'avvio, blocca lo scroll e porta in alto la pagina
+  window.onload = function() {
+    // Porta in alto
+    window.scrollTo(0, 0);
+
+    // Aggiungi classe per bloccare scroll
+    document.body.classList.add('noscroll');
+
+    // Dopo 2 secondi, rimuovi il blocco scroll
+    setTimeout(() => {
+      document.body.classList.remove('noscroll');
+    }, 1000);
+  };
+</script>
+
+
+</head>
+<body>
+<div class="quantum-bg"></div>
+  <!-- SFONDO QUANTICO + GRIGLIA -->
+  <div class="quantum-bg"></div>
+  <div class="neural-grid-bg"></div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <a href="https://minidev97.github.io/MY_PROJECT/" class="left-brand">
+      <img src="download4.png" alt="Logo" class="logo-img">
+      <h1 class="logo-text">NEURAL SPACE</h1>
+    </a>
+
+    <div class="search-box">
+      <input type="text" placeholder="Cerca..." aria-label="Campo di ricerca" autocomplete="off">
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+        <path fill="#999" d="M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+      </svg>
+    </div>
+
+    <!-- Pulsante menu accanto alla barra di ricerca -->
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+  </header>
+
+  <!-- SIDE-MENU -->
+  <div id="side-menu" class="side-menu">
+    <button id="menu-close" class="menu-close">&times;</button>
+    <div id="resizer" class="resizer"></div>
+    <nav class="side-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Giochi</a></li>
+        <li><a href="#">Profilo</a></li>
+        <li><a href="#">Impostazioni</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- TITOLO -->
+  <h2 id="shuffle-title" class="animated-subtitle">Gaming Multiverse</h2>
+  <div style="text-align:center;">
+  <button class="random-game-btn">Scegli gioco casuale</button>
+</div>
+  <!-- GRIGLIA GIOCHI -->
+  <main>
+    <section class="game-grid">
+      <div class="grid-container">
+
+        <!-- PRIMO GIOCO FLAPPY BIRD -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="FlappyBirdo.mp4" type="video/mp4" />
+          </video>
+             <div class="game-info">
+              <h3>Flappy Bird</h3>
+              <p>Genere: Arcade, classic</p>
+            </div>
+        </div>
+
+        <!-- SECONDO GIOCO CHROME DINOSAUR -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="ChromeDinousar.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Chrome Dinosaur</h3>
+              <p>Genere: Arcade, Endless Runner</p>
+            </div>
+        </div>
+
+       <!-- TERZO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Snake</h3>
+              <p>Genere: Arcade, classic, casual</p>
+            </div>
+        </div>
+
+
+        <!-- QUARTO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- QUINTO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- SESTO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+
+        <!-- SETTIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- OTTAVO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- NONO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- DECIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- UNIDICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- DODICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- TREDICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- QUATTORDICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- QUINDICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- SEDICESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- DICIASETTESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- DICIOTESSIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- DICIANOVESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- VENTESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- VENTUNESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- VENTIDUESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- VENTITRESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+
+        <!-- VENTIQUATTRESIMO GIOCO SNAKE -->
+        <div class="game-box video-hover-box">
+          <video class="hover-video" muted loop preload="metadata">
+            <source src="Snake.mp4" type="video/mp4" />
+          </video>
+          <div class="game-info">
+              <h3>Coming soon</h3>
+              <p>Genere: ?</p>
+            </div>
+        </div>
+
+       
+      </div>
+      <button class="other-results">CARICA ALTRI GIOCHI</button>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-social">
+    <p>Connettiti con noi:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+      <a href="#"><i class="fab fa-tiktok"></i><span>TikTok</span></a>
+      <a href="#"><i class="fab fa-discord"></i><span>Discord</span></a>
+      <a href="#"><i class="fas fa-envelope"></i><span>Email</span></a>
+      <a href="#"><i class="fas fa-user-circle"></i><span>About us</span></a>
+    </div>
+  </footer>
+
+  <!-- PRIVACY -->
+  <section class="privacy-section">
+    <h3 class="privacy-title">Informativa sulla Privacy</h3>
+    <p class="privacy-text">
+      In Neural Space, il rispetto della tua privacy è una priorità. Non raccogliamo né condividiamo dati personali senza il tuo consenso. I giochi caricati localmente rimangono privati e l'esperienza utente è progettata per essere sicura e trasparente.
+    </p>
+    <p class="privacy-text">
+      Per saperne di più, consulta la nostra <a href="#">Informativa Completa</a>.
+    </p>
+  </section>
+
+  <footer class="footer-legal">
+    <p>© 2025 NEURAL SPACE. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Termini</a>
+      <a href="#">Cookie</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
